@@ -1,165 +1,171 @@
-7<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dr. Ali Moltajaei Farid – PhD in Computer Science from Monash University, specializing in AI, robotics, and autonomous systems.">
+  <meta name="author" content="Dr. Ali Moltajaei Farid">
   <title>Dr. Ali Moltajaei Farid</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background-color: #f8f9fa;
-      color: #202124;
-    }
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+    a { text-decoration: none; color: #007acc; }
+    a:hover { color: #005ea3; }
+
+    /* Header */
     header {
-      background-color: #4285F4;
-      color: white;
-      padding: 40px 20px;
+      background: #007acc;
+      color: #fff;
       text-align: center;
+      padding: 80px 20px 40px;
     }
+    header h1 { font-size: 2.8rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; }
+
+    /* Navigation */
     nav {
-      background: #e8eaed;
-      padding: 10px 20px;
-      text-align: center;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #1a73e8;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #202124;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
-    }
-    .contact, .skills, .languages {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .contact div, .skills div, .languages div {
-      flex: 1;
-      min-width: 200px;
-    }
+    nav ul { display: flex; justify-content: center; list-style: none; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { padding: 15px 0; display: inline-block; font-weight: 500; }
+
+    /* Sections */
+    section { max-width: 1000px; margin: 60px auto; padding: 0 20px; }
+    section h2 { font-size: 2rem; color: #007acc; margin-bottom: 20px; }
+    section p, section li { font-size: 1rem; margin-bottom: 10px; }
+
+    ul { list-style-type: disc; padding-left: 20px; }
+
+    /* Skills Grid */
+    #skills ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+
+    /* Footer */
     footer {
       text-align: center;
       padding: 20px;
-      background: #e8eaed;
-      color: #5f6368;
-      font-size: 0.9em;
+      background: #007acc;
+      color: #fff;
+      margin-top: 60px;
+    }
+
+    /* Buttons & Links */
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #007acc;
+      color: #fff;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+    a.button:hover { background: #005ea3; }
+
+    /* Animations */
+    section { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+    section.visible { opacity: 1; transform: translateY(0); }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav ul { flex-direction: column; }
+      nav ul li { margin: 5px 0; }
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Dr. Ali Moltajaei Farid</h1>
-  <p>Postdoctoral Researcher | Robotics & AI Expert | Electronics Engineer</p>
-</header>
+  <!-- Header -->
+  <header>
+    <h1>Dr. Ali Moltajaei Farid</h1>
+    <p>Researcher & Engineer – AI, Robotics, and Autonomous Systems</p>
+  </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#research">Research</a>
-  <a href="#skills">Skills</a>
-  <a href="#teaching">Teaching</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>Postdoctoral researcher with experience in reinforcement learning, swarm robotics, UAVs, and intelligent systems. Specialized in R&D for robotic systems in agriculture, UAV patrolling, and smart home automation.</p>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a researcher and engineer with a PhD in Computer Science from Monash University, specializing in AI, robotics, and autonomous systems. Skilled in UAV control, multi-agent reinforcement learning, and intelligent system design, with hands-on experience in both academic and industrial R&D. Experienced in leading projects, publishing high-impact papers, and mentoring students. Currently focusing on independent research, graduate supervision, and skill development while seeking new opportunities in academia or industry.</p>
+  </section>
 
-  <h3>Education</h3>
-  <ul>
-    <li>Ph.D. in Computer Science – Monash University (2020)</li>
-  </ul>
+  <!-- Research Section -->
+  <section id="research">
+    <h2>Research</h2>
+    <p>My research focuses on designing and developing autonomous robotic systems for various applications, including precision agriculture, UAV patrolling, and smart home automation. Notable projects include:</p>
+    <ul>
+      <li>Multi-agent reinforcement learning for precision agriculture robots</li>
+      <li>Optimized UAV patrolling strategies</li>
+      <li>Neuro-fuzzy control of nonlinear systems</li>
+    </ul>
+  </section>
 
-  <h3>Employment</h3>
-  <ul>
-    <li>Postdoctoral Researcher – KNTU (2023–Present)</li>
-    <li>Postdoctoral Researcher – University of Regina (2021–2023)</li>
-    <li>R&D Engineer – PAND Industries (2020–2021)</li>
-  </ul>
-</section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Programming & Tools</h3>
+    <ul>
+      <li>C++, Python, MATLAB, ROS, PyTorch</li>
+      <li>PCB Design (Altium), IoT Systems</li>
+      <li>AVR, ARM, PIC, STM32 Microcontrollers</li>
+    </ul>
+  </section>
 
-<section id="research">
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Reinforcement Learning</li>
-    <li>Swarm Robotics</li>
-    <li>Neuro-Fuzzy Systems</li>
-    <li>Smart Homes</li>
-    <li>UAV Path Planning</li>
-  </ul>
+  <!-- Teaching Section -->
+  <section id="teaching">
+    <h2>Teaching & Supervision</h2>
+    <p>Currently focused on independent research, graduate supervision, and skill development. My teaching and supervision experiences include:</p>
+    <ul>
+      <li>Teaching AI and algorithm courses at various universities</li>
+      <li>Supervising MSc and PhD projects in AI and robotics</li>
+    </ul>
+  </section>
 
-  <h3>Notable Projects</h3>
-  <ul>
-    <li>Precision Agriculture with Multi-Robot Systems using Reinforcement Learning </li>
-    <li>UAV Swarm Patrolling with Multi-objective Optimizers</li>
-    <li>Neuro-fuzzy Control of Non-linear Systems</li>
-  </ul>
-</section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ali.farid@kntu.ac.ir">ali.farid@kntu.ac.ir</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ali-farid/">https://www.linkedin.com/in/ali-farid/</a></p>
+    <a class="button" href="mailto:ali.farid@kntu.ac.ir">Send Email</a>
+  </section>
 
-<section id="skills">
-  <h2>Technical Skills</h2>
-  <div class="skills">
-    <div>
-      <strong>Microcontrollers:</strong><br> AVR, ARM, PIC, STM32
-    </div>
-    <div>
-      <strong>Languages & Tools:</strong><br> C++, Python, MATLAB, ROS, PyTorch
-    </div>
-    <div>
-      <strong>Hardware:</strong><br> PCB Design (Altium), IoT, ISO Standards
-    </div>
-  </div>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Dr. Ali Moltajaei Farid – All rights reserved.</p>
+  </footer>
 
-  <h3>Languages</h3>
-  <div class="languages">
-    <div>English (Fluent)</div>
-    <div>Persian, Turkish (Native)</div>
-    <div>German, Arabic (Basic)</div>
-  </div>
-</section>
-
-<section id="teaching">
-  <h2>Teaching & Supervision</h2>
-  <ul>
-    <li>AI Fundamentals – KNTU (2024)</li>
-    <li>Algorithms – University of Regina (2022)</li>
-    <li>TA roles – Monash University (2018)</li>
-  </ul>
-
-  <h3>Supervision</h3>
-  <p>Co-supervised MSc and PhD students on UAV path planning and adaptive reinforcement learning.</p>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="contact">
-    <div><strong>Email (KNTU):</strong><br> ali.farid@kntu.ac.ir</div>
-    <div><strong>Email (Regina):</strong><br> afarid@uregina.ca</div>
-  </div>
-</section>
-<section id="connect">
-  <h2>Connect with Me</h2>
-  <p>
-    <a href="https://scholar.google.ca/citations?hl=en&user=S6pRoJsAAAAJ" target="_blank">Google Scholar</a> |
-    <a href="https://www.researchgate.net/profile/Ali-Moltajaei-Farid-2" target="_blank">ResearchGate</a> |
-    <a href="https://ca.linkedin.com/in/ali-farid" target="_blank">LinkedIn</a>
-  </p>
-</section>
-  
-  
-<footer>
-  © 2025 Dr. Ali Moltajaei Farid — All rights reserved.
-</footer>
+  <!-- JS for scroll animations -->
+  <script>
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if(sectionTop < triggerBottom) {
+          section.classList.add('visible');
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
