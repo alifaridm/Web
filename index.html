@@ -178,10 +178,39 @@
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 Dr. Ali Moltajaei Farid — All rights reserved</p>
-    </div>
-  </footer>
+<footer>
+  <div class="container">
+    <p>© 2025 Dr. Ali Moltajaei Farid — All rights reserved</p>
+    <p>👀 Unique Visitors: <span id="visitor-counter">Loading...</span></p>
+  </div>
+</footer>
+
+<script>
+  const counterElement = document.getElementById('visitor-counter');
+  const counterKey = "alifaridm.github.io/Web"; // unique key for your site
+
+  async function updateCounter() {
+    try {
+      // Check if this browser has already been counted
+      if (!localStorage.getItem("visitorCounted")) {
+        let response = await fetch(`https://api.countapi.xyz/update/${counterKey}/visits/?amount=1`);
+        let data = await response.json();
+        counterElement.innerText = data.value;
+        localStorage.setItem("visitorCounted", "true"); // mark as counted
+      } else {
+        // Just read the current value (don’t increment again)
+        let response = await fetch(`https://api.countapi.xyz/get/${counterKey}/visits`);
+        let data = await response.json();
+        counterElement.innerText = data.value;
+      }
+    } catch (error) {
+      counterElement.innerText = "Error";
+      console.error("Visitor counter error:", error);
+    }
+  }
+
+  updateCounter();
+</script>
+
 </body>
 </html>
