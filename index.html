@@ -98,7 +98,6 @@
         PhD in Computer Science from <strong>Monash University, Australia</strong>. <br>
         Former researcher at <strong>University of Regina, Canada</strong>
       </p>
-      <a href="Ali_Farid_CV.pdf" class="btn-primary" target="_blank">View CV</a>
       <a href="Ali_Farid_CV.pdf" class="btn-primary" download>Download CV</a>
     </div>
   </header>
@@ -192,7 +191,7 @@
 
     async function updateCounter() {
       try {
-        let response = await fetch(`https://api.countapi.xyz/hit/${counterKey}/visits`);
+        let response = await fetch(`https://api.countapi.xyz/hit/alifaridm.github.io/Web/visits`);
         let data = await response.json();
         counterElement.innerText = data.value;
       } catch (error) {
