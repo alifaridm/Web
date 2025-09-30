@@ -4,99 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dr. Ali Moltajaei Farid — AI, Robotics & Autonomous Systems</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Roboto, sans-serif;
-      color: #333;
-      line-height: 1.6;
-    }
-    .container {
-      width: 90%;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2em 0;
-    }
-    .hero {
-      background: linear-gradient(135deg, #005f73, #0a9396);
-      color: white;
-      text-align: center;
-      padding: 4em 0;
-    }
-    .hero .btn-primary {
-      display: inline-block;
-      margin-top: 1em;
-      background-color: #94d2bd;
-      color: #003049;
-      padding: 0.8em 1.5em;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .hero .btn-primary:hover {
-      background-color: #e9d8a6;
-    }
-    .main-nav {
-      background: #e9d8a6;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .main-nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0.5em 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .main-nav li {
-      margin: 0 1em;
-    }
-    .main-nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
-    }
-    .section {
-      padding: 3em 0;
-    }
-    .alt-bg {
-      background: #f0efeb;
-    }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1em;
-      list-style: none;
-      padding: 0;
-    }
-    .project-list, .pub-list {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5em;
-      list-style: none;
-      padding: 0;
-    }
-    .project-item h3 {
-      margin-bottom: 0.3em;
-    }
-    footer {
-      background: #003049;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="hero">
     <div class="container">
       <h1>Dr. Ali Moltajaei Farid</h1>
-      <p class="tagline">Researcher & Engineer in AI, Robotics, and Autonomous Systems</p>
+      <p class="tagline">
+        Researcher & Engineer in AI, Robotics, and Autonomous Systems
+      </p>
       <p>
-        PhD in Computer Science from <strong>Monash University, Australia</strong>. <br>
-        Former researcher at <strong>University of Regina, Canada</strong>
+        PhD in Computer Science from <strong>Monash University, Australia</strong>.  
+        Former researcher at <strong>University of Regina, Canada</strong>.  
+        Seeking impactful roles in industry or academia.
       </p>
       <a href="Ali_Farid_CV.pdf" class="btn-primary" download>Download CV</a>
     </div>
@@ -162,9 +82,9 @@
     <div class="container">
       <h2>Selected Publications & Contributions</h2>
       <ul class="pub-list">
-        <li><strong>Multi-UAV Weed Spraying</strong>, ROBOVIS 2024: 210-224 — coordinated spraying strategies using UAV swarms.</li>
-        <li><strong>On-policy Actor-Critic Reinforcement Learning for Multi-UAV Exploration</strong>, CoRR 2024 — development of actor-critic RL method tailored for efficient multi-UAV mapping.</li>
-        <li><strong>Search Strategies and Specifications in a Swarm versus Swarm Context</strong>, <em>Robotica</em>, 39(11):1909-1925 (2021) — comparing swarm behaviour and search tactics under varying constraints.</li>
+        <li><strong>Title A</strong>, Journal / Conf, Year — short description or highlight</li>
+        <li><strong>Title B</strong>, Journal / Conf, Year — highlight</li>
+        <li><strong>Title C</strong>, Journal / Conf, Year — highlight</li>
       </ul>
     </div>
   </section>
@@ -181,26 +101,7 @@
   <footer>
     <div class="container">
       <p>© 2025 Dr. Ali Moltajaei Farid — All rights reserved</p>
-      <p>Total Views: <span id="visitor-counter">Loading...</span></p>
     </div>
   </footer>
-
-  <script>
-    const counterElement = document.getElementById('visitor-counter');
-    const counterKey = "alifaridm.github.io/Web"; // unique key for your site
-
-    async function updateCounter() {
-      try {
-        let response = await fetch(`https://api.countapi.xyz/hit/alifaridm.github.io/Web/visits`);
-        let data = await response.json();
-        counterElement.innerText = data.value;
-      } catch (error) {
-        counterElement.innerText = "Error";
-        console.error("Visitor counter error:", error);
-      }
-    }
-
-    updateCounter();
-  </script>
 </body>
 </html>
