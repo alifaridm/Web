@@ -96,8 +96,10 @@
       <p class="tagline">Researcher & Engineer in AI, Robotics, and Autonomous Systems</p>
       <p>
         PhD in Computer Science from <strong>Monash University, Australia</strong>. <br>
-        Former researcher at <strong>University of Regina, Canada</strong>
+        Former researcher at <strong>University of Regina, Canada</strong>. <br>
+        Seeking impactful roles in industry or academia.
       </p>
+      <a href="Ali_Farid_CV.pdf" class="btn-primary" target="_blank">View CV</a>
       <a href="Ali_Farid_CV.pdf" class="btn-primary" download>Download CV</a>
     </div>
   </header>
@@ -163,8 +165,8 @@
       <h2>Selected Publications & Contributions</h2>
       <ul class="pub-list">
         <li><strong>Multi-UAV Weed Spraying</strong>, ROBOVIS 2024: 210-224 — coordinated spraying strategies using UAV swarms.</li>
-      <li><strong>On-policy Actor-Critic Reinforcement Learning for Multi-UAV Exploration</strong>, CoRR 2024 — development of actor-critic RL method tailored for efficient multi-UAV mapping.</li>
-      <li><strong>Search Strategies and Specifications in a Swarm versus Swarm Context</strong>, *Robotica*, 39(11):1909-1925 (2021) — comparing swarm behaviour and search tactics under varying constraints.</li>
+        <li><strong>On-policy Actor-Critic Reinforcement Learning for Multi-UAV Exploration</strong>, CoRR 2024 — development of actor-critic RL method tailored for efficient multi-UAV mapping.</li>
+        <li><strong>Search Strategies and Specifications in a Swarm versus Swarm Context</strong>, <em>Robotica</em>, 39(11):1909-1925 (2021) — comparing swarm behaviour and search tactics under varying constraints.</li>
       </ul>
     </div>
   </section>
@@ -172,45 +174,42 @@
   <section id="contact" class="section">
     <div class="container">
       <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:afarid@uregina.ca">afarid@uregina.ca</a></p>
+      <p>Email: <a href="mailto:ali.farid@kntu.ac.ir">ali.farid@kntu.ac.ir</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/ali-farid/">linkedin.com/in/ali-farid</a></p>
       <p><em>Let’s talk about how I can contribute to your team.</em></p>
     </div>
   </section>
 
-<footer>
-  <div class="container">
-    <p>© 2025 Dr. Ali Moltajaei Farid — All rights reserved</p>
-    <p>Unique Visitors: <span id="visitor-counter">Loading...</span></p>
-  </div>
-</footer>
+  <footer>
+    <div class="container">
+      <p>© 2025 Dr. Ali Moltajaei Farid — All rights reserved</p>
+      <p>👀 Unique Visitors: <span id="visitor-counter">Loading...</span></p>
+    </div>
+  </footer>
 
-<script>
-  const counterElement = document.getElementById('visitor-counter');
-  const counterKey = "alifaridm.github.io/Web"; // unique key for your site
+  <script>
+    const counterElement = document.getElementById('visitor-counter');
+    const counterKey = "alifaridm.github.io/Web"; // unique key for your site
 
-  async function updateCounter() {
-    try {
-      // Check if this browser has already been counted
-      if (!localStorage.getItem("visitorCounted")) {
-        let response = await fetch(`https://api.countapi.xyz/update/${counterKey}/visits/?amount=1`);
-        let data = await response.json();
-        counterElement.innerText = data.value;
-        localStorage.setItem("visitorCounted", "true"); // mark as counted
-      } else {
-        // Just read the current value (don’t increment again)
-        let response = await fetch(`https://api.countapi.xyz/get/${counterKey}/visits`);
-        let data = await response.json();
-        counterElement.innerText = data.value;
+    async function updateCounter() {
+      try {
+        if (!localStorage.getItem("visitorCounted")) {
+          let response = await fetch(`https://api.countapi.xyz/update/${counterKey}/visits/?amount=1`);
+          let data = await response.json();
+          counterElement.innerText = data.value;
+          localStorage.setItem("visitorCounted", "true");
+        } else {
+          let response = await fetch(`https://api.countapi.xyz/get/${counterKey}/visits`);
+          let data = await response.json();
+          counterElement.innerText = data.value;
+        }
+      } catch (error) {
+        counterElement.innerText = "Error";
+        console.error("Visitor counter error:", error);
       }
-    } catch (error) {
-      counterElement.innerText = "Error";
-      console.error("Visitor counter error:", error);
     }
-  }
 
-  updateCounter();
-</script>
-
+    updateCounter();
+  </script>
 </body>
 </html>
