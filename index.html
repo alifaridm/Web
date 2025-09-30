@@ -183,7 +183,7 @@
   <footer>
     <div class="container">
       <p>© 2025 Dr. Ali Moltajaei Farid — All rights reserved</p>
-      <p>👀 Unique Visitors: <span id="visitor-counter">Loading...</span></p>
+      <p>👀 Total Views: <span id="visitor-counter">Loading...</span></p>
     </div>
   </footer>
 
@@ -193,16 +193,9 @@
 
     async function updateCounter() {
       try {
-        if (!localStorage.getItem("visitorCounted")) {
-          let response = await fetch(`https://api.countapi.xyz/update/${counterKey}/visits/?amount=1`);
-          let data = await response.json();
-          counterElement.innerText = data.value;
-          localStorage.setItem("visitorCounted", "true");
-        } else {
-          let response = await fetch(`https://api.countapi.xyz/get/${counterKey}/visits`);
-          let data = await response.json();
-          counterElement.innerText = data.value;
-        }
+        let response = await fetch(`https://api.countapi.xyz/hit/${counterKey}/visits`);
+        let data = await response.json();
+        counterElement.innerText = data.value;
       } catch (error) {
         counterElement.innerText = "Error";
         console.error("Visitor counter error:", error);
