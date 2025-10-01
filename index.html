@@ -182,7 +182,7 @@
   <footer>
     <div class="container">
       <p>© 2025 Dr. Ali Moltajaei Farid — All rights reserved</p>
-      <p>👀 Unique Visitors: <span id="visitor-counter">Loading...</span></p>
+      <p><span id="visitor-counter">Loading...</span></p>
     </div>
   </footer>
 
@@ -203,7 +203,7 @@
           counterElement.innerText = data.value;
         }
       } catch (error) {
-        counterElement.innerText = "Error";
+        counterElement.innerText = "";
         console.error("Visitor counter error:", error);
       }
     }
