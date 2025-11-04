@@ -1,127 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Ali Moltajaei Farid | Robotics & AI Expert</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Ali Moltajaei Farid — AI, Robotics & Autonomous Systems</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2em 0;
+    }
+    .hero {
+      background: linear-gradient(135deg, #005f73, #0a9396);
+      color: white;
+      text-align: center;
+      padding: 4em 0;
+    }
+    .hero .btn-primary {
+      display: inline-block;
+      margin-top: 1em;
+      background-color: #94d2bd;
+      color: #003049;
+      padding: 0.8em 1.5em;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .hero .btn-primary:hover {
+      background-color: #e9d8a6;
+    }
+    .main-nav {
+      background: #e9d8a6;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .main-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0.5em 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .main-nav li {
+      margin: 0 1em;
+    }
+    .main-nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+    .section {
+      padding: 3em 0;
+    }
+    .alt-bg {
+      background: #f0efeb;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1em;
+      list-style: none;
+      padding: 0;
+    }
+    .project-list, .pub-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5em;
+      list-style: none;
+      padding: 0;
+    }
+    .project-item h3 {
+      margin-bottom: 0.3em;
+    }
+    footer {
+      background: #003049;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Dr. Ali Moltajaei Farid</h1>
-            <h2><strong>Researcher & Engineer in AI, Robotics, and Autonomous Systems</strong></h2>
-            <p><strong>PhD in Computer Science from Monash University, Australia.</strong><br>
-               <strong>Former researcher at University of Regina, Canada.</strong></p>
+  <header class="hero">
+    <div class="container">
+      <h1>Dr. Ali Moltajaei Farid</h1>
+      <p class="tagline">Researcher & Engineer in AI, Robotics, and Autonomous Systems</p>
+      <p>
+        PhD in Computer Science from <strong>Monash University, Australia</strong>. <br>
+        Former researcher at <strong>University of Regina, Canada</strong>.
+  
+      </p>
+      <a href="Ali_Farid_CV.pdf" class="btn-primary" download>Download CV</a>
+    </div>
+  </header>
+
+<nav class="main-nav">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research & Projects</a></li>
+    <li><a href="projects.html">Sample Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a researcher and engineer specializing in AI, robotics, and autonomous systems. I hold a PhD in Computer Science from <strong>Monash University, Australia</strong>, and have conducted research at the <strong>University of Regina, Canada</strong>. My work spans UAV control, multi-agent reinforcement learning, and intelligent system design.
+      </p>
+      <p>
+        I’ve led interdisciplinary projects, published in top-tier journals/conferences, and supervised students. I’m currently open to roles in both academia and industry, where I can contribute to real-world intelligent systems.
+      </p>
+    </div>
+  </section>
+
+  <section id="research" class="section alt-bg">
+    <div class="container">
+      <h2>Research & Projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <h3>Multi-Agent RL for Precision Agriculture Robots</h3>
+          <p>Design and implementation of cooperative agents for crop monitoring and management.</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>I am a robotics and AI researcher with over 15 years of experience bridging cutting-edge research and real-world applications. My work focuses on autonomous UAV swarms, multi-agent reinforcement learning, and embedded systems, transforming advanced robotics into practical solutions for smart agriculture, environmental monitoring, and industrial automation.</p>
-        <p>Throughout my career, I have led interdisciplinary teams, supervised graduate students, and contributed to over 20 publications in top-tier journals and conferences. I thrive on solving complex problems, from designing autonomous swarm algorithms to developing hardware-software integrated systems that operate reliably in real-world environments.</p>
-        <p>My vision is to advance robotics that are intelligent, scalable, and beneficial to society, while mentoring the next generation of engineers and collaborating with industry partners to translate innovations from the lab into impactful solutions.</p>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Selected Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Autonomous UAV Swarms</h3>
-                <p>Developed multi-agent coordination algorithms enabling real-time swarm deployment for agriculture and environmental monitoring, improving efficiency and reliability.</p>
-            </div>
-            <div class="project-card">
-                <h3>Reinforcement Learning Systems</h3>
-                <p>Designed RL frameworks for adaptive robotics tasks, enhancing autonomy in complex and dynamic environments.</p>
-            </div>
-            <div class="project-card">
-                <h3>Embedded Robotics Platforms</h3>
-                <p>Built integrated hardware-software platforms for UAVs and autonomous vehicles, ensuring robust performance in real-world conditions.</p>
-            </div>
-            <div class="project-card">
-                <h3>Industry Collaborations</h3>
-                <p>Partnered with commercial entities to deploy academic robotics innovations into scalable, practical solutions.</p>
-            </div>
+        <div class="project-item">
+          <h3>Optimized UAV Patrolling Strategies</h3>
+          <p>Adaptive control and path planning algorithms for autonomous aerial surveillance.</p>
         </div>
-    </section>
-
-    <section id="skills" class="section">
-        <h2>Skills & Expertise</h2>
-        <div class="skills-grid">
-            <div>
-                <h3>Software & Algorithms</h3>
-                <ul>
-                    <li>C++, Python, ROS, MATLAB</li>
-                    <li>Multi-Agent Systems, Reinforcement Learning, Path Planning</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Hardware & Embedded Systems</h3>
-                <ul>
-                    <li>UAVs, Drones, Robotics Platforms</li>
-                    <li>Embedded Electronics, Sensors, Actuators</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Research Methods & Analysis</h3>
-                <ul>
-                    <li>Simulation, Experimental Design, Data Analysis</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Languages</h3>
-                <ul>
-                    <li>English, [Other Languages if applicable]</li>
-                </ul>
-            </div>
+        <div class="project-item">
+          <h3>Neuro-Fuzzy Control of Nonlinear Systems</h3>
+          <p>Hybrid control techniques applied to dynamic systems under uncertainty.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="teaching" class="section">
-        <h2>Teaching & Mentorship</h2>
-        <p>I have taught advanced robotics, AI, and embedded systems courses, supervising MSc and PhD students in UAV swarm coordination, reinforcement learning, and autonomous systems development.</p>
-    </section>
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+      <ul class="skills-grid">
+        <li>C++, Python, MATLAB</li>
+        <li>ROS, PyTorch, TensorFlow</li>
+        <li>PCB Design (Altium), IoT Systems</li>
+        <li>Microcontrollers: AVR, ARM, PIC, STM32</li>
+        <li>Multi-Agent RL, Control Systems, Path Planning</li>
+        <li>Project Leadership, Mentoring, Scientific Writing</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>I am open to research collaborations, industry partnerships, and graduate supervision.</p>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/alifaridm">linkedin.com/in/alifaridm</a></p>
-        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=your-id">View Publications</a></p>
-    </section>
+  <section id="publications" class="section alt-bg">
+    <div class="container">
+      <h2>Selected Publications & Contributions</h2>
+      <ul class="pub-list">
+        <li><strong>Multi-UAV Weed Spraying</strong>, ROBOVIS 2024: 210-224 — coordinated spraying strategies using UAV swarms.</li>
+        <li><strong>On-policy Actor-Critic Reinforcement Learning for Multi-UAV Exploration</strong>, CoRR 2024 — development of actor-critic RL method tailored for efficient multi-UAV mapping.</li>
+        <li><strong>Search Strategies and Specifications in a Swarm versus Swarm Context</strong>, <em>Robotica</em>, 39(11):1909-1925 (2021) — comparing swarm behaviour and search tactics under varying constraints.</li>
+      </ul>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Dr. Ali Moltajaei Farid</p>
-    </footer>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:afarid@uregina.ca">afarid@uregina.ca</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ali-farid/">linkedin.com/in/ali-farid</a></p>
+      <p><em>Let’s talk about how I can contribute to your team.</em></p>
+    </div>
+  </section>
 
-    <style>
-        body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f5f5f5; color:#333; }
-        header { background:#1e1e2f; color:#fff; padding:40px 20px; text-align:center; }
-        header h1 { font-size:3em; margin:0; }
-        header h2 { font-weight:700; margin:10px 0; }
-        header p { font-weight:700; margin:5px 0; }
-        nav ul { list-style:none; display:flex; justify-content:center; gap:25px; padding:0; margin:0; }
-        nav ul li a { color:#fff; text-decoration:none; font-weight:bold; transition:0.3s; }
-        nav ul li a:hover { color:#ffcc00; }
-        .section { max-width:1000px; margin:40px auto; padding:30px; background:#fff; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.1); }
-        h2 { color:#1e1e2f; border-bottom:2px solid #1e1e2f; display:inline-block; padding-bottom:5px; }
-        .project-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; margin-top:20px; }
-        .project-card { background:#f0f0f0; padding:20px; border-radius:10px; transition:0.3s; }
-        .project-card:hover { transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.15); }
-        .skills-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:20px; margin-top:20px; }
-        footer { text-align:center; padding:20px; background:#1e1e2f; color:#fff; }
-        a { color:#1e1e2f; text-decoration:none; }
-        a:hover { text-decoration:underline; }
-    </style>
+  <footer>
+    <div class="container">
+      <p>© 2025 Dr. Ali Moltajaei Farid — All rights reserved</p>
+      <p><span id="visitor-counter">Loading...</span></p>
+    </div>
+  </footer>
+
+  <script>
+    const counterElement = document.getElementById('visitor-counter');
+    const counterKey = "alifaridm.github.io/Web"; // unique key for your site
+
+    async function updateCounter() {
+      try {
+        if (!localStorage.getItem("visitorCounted")) {
+          let response = await fetch(`https://api.countapi.xyz/update/${counterKey}/visits/?amount=1`);
+          let data = await response.json();
+          counterElement.innerText = data.value;
+          localStorage.setItem("visitorCounted", "true");
+        } else {
+          let response = await fetch(`https://api.countapi.xyz/get/${counterKey}/visits`);
+          let data = await response.json();
+          counterElement.innerText = data.value;
+        }
+      } catch (error) {
+        counterElement.innerText = "";
+        console.error("Visitor counter error:", error);
+      }
+    }
+
+    updateCounter();
+  </script>
 </body>
 </html>
