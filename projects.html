@@ -83,6 +83,11 @@
       margin-top: 3rem;
       font-size: 0.9rem;
     }
+
+    /* Responsive tweaks */
+    @media (max-width: 480px) {
+      .project-card img { height: 180px; }
+    }
   </style>
 </head>
 
@@ -193,6 +198,15 @@
         <div class="project-content">
           <h3>Raspberry Pi Remote Video</h3>
           <p>Developed a Raspberry Pi–based controller for unmanned ground vehicles with real-time wireless video streaming for enhanced situational awareness.</p>
+        </div>
+      </div>
+
+      <!-- RF Fractional Needling Controller (newly added) -->
+      <div class="project-card">
+        <img src="images/p14.jpg" alt="RF Fractional Needling Controller">
+        <div class="project-content">
+          <h3>RF Fractional Needling Controller</h3>
+          <p>Refurbished an existing fractional-needling control board: migrated from an 8-bit dsPIC design to an STM32-based controller and added new headpiece features and improved functionality.</p>
         </div>
       </div>
 
