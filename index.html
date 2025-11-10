@@ -7,148 +7,193 @@
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Roboto, sans-serif;
-      color: #333;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #222;
+      background-color: #fafafa;
       line-height: 1.6;
     }
-    .container {
-      width: 90%;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2em 0;
-    }
-    .hero {
-      background: linear-gradient(135deg, #005f73, #0a9396);
-      color: white;
+
+    header, footer {
+      background-color: #003366;
+      color: #fff;
+      padding: 1.5rem 2rem;
       text-align: center;
-      padding: 4em 0;
     }
-    .hero .btn-primary {
+
+    header h1 {
+      margin: 0.3rem 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0.2rem 0 0.8rem 0;
+    }
+
+    header a.btn-primary {
       display: inline-block;
-      margin-top: 1em;
+      margin-top: 0.8rem;
       background-color: #94d2bd;
       color: #003049;
       padding: 0.8em 1.5em;
-      border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s;
+      transition: background 0.3s ease;
     }
-    .hero .btn-primary:hover {
+
+    header a.btn-primary:hover {
       background-color: #e9d8a6;
     }
-    .main-nav {
-      background: #e9d8a6;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    nav {
+      background: #f1f1f1;
+      border-bottom: 2px solid #003366;
+      text-align: center;
+      padding: 0.6rem 0;
     }
-    .main-nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0.5em 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .main-nav li {
-      margin: 0 1em;
-    }
-    .main-nav a {
+
+    nav a {
+      color: #003366;
       text-decoration: none;
-      color: #333;
       font-weight: 600;
+      margin: 0 1rem;
+      transition: color 0.2s ease;
     }
-    .section {
-      padding: 3em 0;
+
+    nav a:hover {
+      color: #0055aa;
     }
-    .alt-bg {
-      background: #f0efeb;
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
+
+    section {
+      margin-bottom: 3rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 2rem;
+    }
+
+    section h2 {
+      color: #003366;
+      border-left: 5px solid #003366;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .bio-img {
+      display: block;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 1rem auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1em;
-      list-style: none;
+      gap: 1rem;
       padding: 0;
+      list-style: none;
     }
+
+    .skills-grid li {
+      background: #f6f8fc;
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+    }
+
     .project-list, .pub-list {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5em;
       list-style: none;
       padding: 0;
     }
-    .project-item h3 {
-      margin-bottom: 0.3em;
+
+    .project-item, .pub-list li {
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid #eee;
     }
+
+    .project-item h3 {
+      margin-bottom: 0.3rem;
+      color: #003366;
+    }
+
     footer {
-      background: #003049;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      section {
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
+
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Dr. Ali Moltajaei Farid</h1>
-      <p class="tagline">Researcher & Engineer in AI, Robotics, and Autonomous Systems</p>
-      <p>
-        PhD in Computer Science from <strong>Monash University, Australia</strong>. <br>
-        Former researcher at <strong>University of Regina, Canada</strong>.
-  
-      </p>
-      <a href="Ali_Farid_CV.pdf" class="btn-primary" download>Download CV</a>
-    </div>
+  <header>
+    <h1>Dr. Ali Moltajaei Farid</h1>
+    <p>Researcher & Engineer in AI, Robotics, and Autonomous Systems</p>
+    <p>PhD in Computer Science — <strong>Monash University, Australia</strong><br>
+       Former Researcher — <strong>University of Regina, Canada</strong></p>
+    <a href="Ali_Farid_CV.pdf" class="btn-primary" download>Download CV</a>
   </header>
 
-<nav class="main-nav">
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#research">Research & Projects</a></li>
-    <li><a href="projects.html">Sample Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <nav>
+    <a href="#about">About</a> |
+    <a href="#research">Research & Projects</a> |
+    <a href="projects.html">Sample Projects</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#publications">Publications</a> |
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <main class="container">
 
-  <section id="about" class="section">
-    <div class="container">
+    <section id="about">
+      <img src="images/profile.jpg" alt="Ali Moltajaei Farid" class="bio-img">
       <h2>About Me</h2>
-      <p>
-        I am a researcher and engineer specializing in AI, robotics, and autonomous systems. I hold a PhD in Computer Science from <strong>Monash University, Australia</strong>, and have conducted research at the <strong>University of Regina, Canada</strong>. My work spans UAV control, multi-agent reinforcement learning, and intelligent system design.
-      </p>
-      <p>
-        I’ve led interdisciplinary projects, published in top-tier journals/conferences, and supervised students. I’m currently open to roles in both academia and industry, where I can contribute to real-world intelligent systems.
-      </p>
-    </div>
-  </section>
+      <p>I am a researcher and engineer specializing in AI, robotics, and autonomous systems. I hold a PhD in Computer Science from <strong>Monash University, Australia</strong>, and have conducted research at the <strong>University of Regina, Canada</strong>. My work spans UAV control, multi-agent reinforcement learning, and intelligent system design.</p>
+      <p>I have led interdisciplinary projects, published in top-tier journals and conferences, and supervised graduate students. I am currently open to roles in both academia and industry, focusing on real-world intelligent systems.</p>
+    </section>
 
-  <section id="research" class="section alt-bg">
-    <div class="container">
+    <section id="research">
       <h2>Research & Projects</h2>
-      <div class="project-list">
-        <div class="project-item">
+      <ul class="project-list">
+        <li class="project-item">
           <h3>Multi-Agent RL for Precision Agriculture Robots</h3>
-          <p>Design and implementation of cooperative agents for crop monitoring and management.</p>
-        </div>
-        <div class="project-item">
+          <p>Design and implementation of cooperative agents for crop monitoring and management using UAV swarms and reinforcement learning.</p>
+        </li>
+        <li class="project-item">
           <h3>Optimized UAV Patrolling Strategies</h3>
-          <p>Adaptive control and path planning algorithms for autonomous aerial surveillance.</p>
-        </div>
-        <div class="project-item">
+          <p>Adaptive control and path planning algorithms for autonomous aerial surveillance missions with real-time optimization.</p>
+        </li>
+        <li class="project-item">
           <h3>Neuro-Fuzzy Control of Nonlinear Systems</h3>
-          <p>Hybrid control techniques applied to dynamic systems under uncertainty.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+          <p>Hybrid control architectures integrating neural and fuzzy models for uncertain nonlinear system environments.</p>
+        </li>
+      </ul>
+    </section>
 
-  <section id="skills" class="section">
-    <div class="container">
+    <section id="skills">
       <h2>Skills & Tools</h2>
       <ul class="skills-grid">
         <li>C++, Python, MATLAB</li>
@@ -158,58 +203,49 @@
         <li>Multi-Agent RL, Control Systems, Path Planning</li>
         <li>Project Leadership, Mentoring, Scientific Writing</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <section id="publications" class="section alt-bg">
-    <div class="container">
+    <section id="publications">
       <h2>Selected Publications & Contributions</h2>
       <ul class="pub-list">
-        <li><strong>Multi-UAV Weed Spraying</strong>, ROBOVIS 2024: 210-224 — coordinated spraying strategies using UAV swarms.</li>
+        <li><strong>Multi-UAV Weed Spraying</strong>, ROBOVIS 2024: 210–224 — coordinated spraying strategies using UAV swarms.</li>
         <li><strong>On-policy Actor-Critic Reinforcement Learning for Multi-UAV Exploration</strong>, CoRR 2024 — development of actor-critic RL method tailored for efficient multi-UAV mapping.</li>
-        <li><strong>Search Strategies and Specifications in a Swarm versus Swarm Context</strong>, <em>Robotica</em>, 39(11):1909-1925 (2021) — comparing swarm behaviour and search tactics under varying constraints.</li>
+        <li><strong>Search Strategies and Specifications in a Swarm versus Swarm Context</strong>, <em>Robotica</em>, 39(11):1909–1925 (2021) — comparative analysis of swarm behaviours and search tactics under varying constraints.</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
+    <section id="contact">
+      <h2>Contact</h2>
       <p>Email: <a href="mailto:afarid@uregina.ca">afarid@uregina.ca</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/ali-farid/">linkedin.com/in/ali-farid</a></p>
-      <p><em>Let’s talk about how I can contribute to your team.</em></p>
-    </div>
-  </section>
+      <p><em>Let’s talk about how I can contribute to your team or collaborate on research.</em></p>
+    </section>
+  </main>
 
   <footer>
-    <div class="container">
-      <p>© 2025 Dr. Ali Moltajaei Farid — All rights reserved</p>
-      <p><span id="visitor-counter">Loading...</span></p>
-    </div>
+    <p>© 2025 Dr. Ali Moltajaei Farid — All rights reserved</p>
+    <p><span id="visitor-counter">Loading...</span></p>
   </footer>
 
   <script>
     const counterElement = document.getElementById('visitor-counter');
-    const counterKey = "alifaridm.github.io/Web"; // unique key for your site
-
+    const counterKey = "alifaridm.github.io/Web"; 
     async function updateCounter() {
       try {
         if (!localStorage.getItem("visitorCounted")) {
-          let response = await fetch(`https://api.countapi.xyz/update/${counterKey}/visits/?amount=1`);
-          let data = await response.json();
-          counterElement.innerText = data.value;
+          const res = await fetch(`https://api.countapi.xyz/update/${counterKey}/visits/?amount=1`);
+          const data = await res.json();
+          counterElement.textContent = `Visitors: ${data.value}`;
           localStorage.setItem("visitorCounted", "true");
         } else {
-          let response = await fetch(`https://api.countapi.xyz/get/${counterKey}/visits`);
-          let data = await response.json();
-          counterElement.innerText = data.value;
+          const res = await fetch(`https://api.countapi.xyz/get/${counterKey}/visits`);
+          const data = await res.json();
+          counterElement.textContent = `Visitors: ${data.value}`;
         }
-      } catch (error) {
-        counterElement.innerText = "";
-        console.error("Visitor counter error:", error);
+      } catch {
+        counterElement.textContent = "";
       }
     }
-
     updateCounter();
   </script>
 </body>
