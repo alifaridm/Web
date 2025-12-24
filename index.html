@@ -13,9 +13,6 @@ nav a{margin:0 1rem;color:#003366;text-decoration:none;font-weight:600;}
 .container{max-width:1000px;margin:2rem auto;padding:1rem;}
 section{background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.1);padding:2rem;margin-bottom:2rem;}
 h2{color:#003366;border-left:5px solid #003366;padding-left:10px;}
-.profile-toggle{text-align:center;margin:1rem;}
-.profile-toggle button{border:none;background:#003366;color:white;padding:10px 18px;border-radius:20px;margin:0 10px;font-weight:600;cursor:pointer;}
-.profile-toggle button:hover{background:#0055aa;}
 .bio-img{width:160px;height:160px;border-radius:50%;display:block;margin:0 auto 1rem;}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;list-style:none;padding:0;}
 .skills-grid li{background:#f6f8fc;border-radius:8px;padding:.7rem;}
@@ -29,16 +26,11 @@ h2{color:#003366;border-left:5px solid #003366;padding-left:10px;}
 
 <header>
 <h1>Dr. Ali Moltajaei Farid</h1>
-<p>AI, Robotics & Embedded Systems Engineer</p>
+<p>AI, Robotics & Embedded Systems Engineer | Senior Researcher</p>
 <p>PhD — Monash University | Former Researcher — University of Regina</p>
-<a href="Ali_Farid_Academic_CV.pdf" class="btn-primary">Academic CV</a>
-<a href="Ali_Farid_Industry_CV.pdf" class="btn-primary">Industry CV</a>
+<a href="Ali_Farid_Academic_CV.pdf" class="btn-primary">Download Academic CV</a>
+<a href="Ali_Farid_Industry_CV.pdf" class="btn-primary">Download Industry CV</a>
 </header>
-
-<div class="profile-toggle">
-<button onclick="showAcademic()">Academic Profile</button>
-<button onclick="showIndustry()">Industry Profile</button>
-</div>
 
 <nav>
 <a href="#about">About</a>
@@ -50,73 +42,47 @@ h2{color:#003366;border-left:5px solid #003366;padding-left:10px;}
 
 <main class="container">
 
-<div id="academic-profile">
-
 <section id="about">
 <img src="images/profile.jfif" class="bio-img">
-<h2>Academic Profile</h2>
-<p>Researcher in swarm robotics, UAV autonomy, and reinforcement learning with international research experience in Canada and Australia.</p>
+<h2>About Me</h2>
+<p>
+Robotics and AI engineer with 10+ years of experience across academia and industry.
+Specialized in autonomous UAV systems, swarm robotics, reinforcement learning,
+embedded electronics and PCB design. Experienced in deploying autonomous systems
+for agriculture, medical devices, and industrial automation.
+</p>
 </section>
 
 <section id="projects">
-<h2>Research Projects</h2>
+<h2>Key Projects & Experience</h2>
 <ul class="project-list">
-<li>Multi-UAV RL Precision Agriculture Systems</li>
-<li>Adaptive UAV Swarm Patrolling Algorithms</li>
-<li>Neuro-Fuzzy Intelligent Controllers</li>
+<li><b>Multi-UAV Precision Agriculture Systems (Canada)</b> — Field-tested RL-based spraying and mapping platforms.</li>
+<li><b>Medical RF Micro-Needling Devices</b> — Electronics, firmware, PCB layout, compliance documentation.</li>
+<li><b>RL-based Quadcopter Flight Controller</b> — Autonomous navigation and stabilization.</li>
+<li><b>Smart Industrial Monitoring & Mini-PC Platforms</b> — ARM-based embedded monitoring systems.</li>
 </ul>
 </section>
 
 <section id="skills">
-<h2>Research Skills</h2>
+<h2>Skills & Tools</h2>
 <ul class="skills-grid">
-<li>Reinforcement Learning</li>
-<li>Swarm Robotics</li>
-<li>Python, MATLAB, ROS</li>
-<li>Multi-Agent Systems</li>
+<li>Python, C++, MATLAB, ROS</li>
+<li>PyTorch, Reinforcement Learning</li>
+<li>ARM, STM32, PIC, Raspberry Pi</li>
+<li>PCB Design (Altium, Protel)</li>
+<li>Pixhawk, Ardupilot UAVs</li>
+<li>Linux, Embedded Systems</li>
 </ul>
 </section>
 
 <section id="publications">
 <h2>Selected Publications</h2>
 <ul class="project-list">
-<li>Robotica (2023) – UAV Patrolling</li>
-<li>EAAI (2025) – Multi-Robot Spraying</li>
-<li>Journal of Aerospace Science & Tech (2025)</li>
+<li><em>Engineering Applications of Artificial Intelligence</em>, 2025 — Multi-robot spraying</li>
+<li><em>Robotica</em>, 2023 — UAV swarm patrolling</li>
+<li><em>Journal of Aerospace Science & Technology</em>, 2025 — RL fuzzy quadrotor control</li>
 </ul>
 </section>
-
-</div>
-
-<div id="industry-profile" style="display:none">
-
-<section>
-<h2>Senior Robotics & AI Engineer</h2>
-<p>10+ years designing deployable autonomous UAV, robotics and embedded AI systems.</p>
-<ul class="project-list">
-<li>Multi-UAV weed spraying (Precision.ai, Canada)</li>
-<li>Medical RF micro-needling device electronics</li>
-<li>ARM based industrial monitoring systems</li>
-<li>RL-based quadrotor controllers</li>
-</ul>
-</section>
-
-<section>
-<h2>Engineering Skills</h2>
-<ul class="skills-grid">
-<li>Embedded C/C++, ARM, STM32</li>
-<li>PCB Design (Altium)</li>
-<li>ROS, Linux, PyTorch</li>
-<li>Pixhawk, Ardupilot UAVs</li>
-</ul>
-</section>
-
-<section>
-<h2>Industry Focus</h2>
-<p>Aerospace, robotics, medical devices, autonomous systems, smart manufacturing.</p>
-</section>
-
-</div>
 
 <section id="contact">
 <h2>Contact</h2>
@@ -127,12 +93,33 @@ h2{color:#003366;border-left:5px solid #003366;padding-left:10px;}
 </main>
 
 <footer>
-© 2025 Dr Ali Moltajaei Farid
+<p>© 2025 Dr Ali Moltajaei Farid — AI, Robotics & Embedded Systems</p>
+<p><span id="visitor-counter">Loading...</span></p>
+<a href="https://info.flagcounter.com/73KK">
+<img src="https://s05.flagcounter.com/count2/73KK/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter">
+</a>
 </footer>
 
 <script>
-#function showAcademic(){academic-profile.style.display="block";industry-profile.style.display="none";}
-#function showIndustry(){academic-profile.style.display="none";industry-profile.style.display="block";}
+const counterElement = document.getElementById('visitor-counter');
+const counterKey = "alifaridm.github.io/Web"; 
+async function updateCounter() {
+  try {
+    if (!localStorage.getItem("visitorCounted")) {
+      const res = await fetch(`https://api.countapi.xyz/update/${counterKey}/visits/?amount=1`);
+      const data = await res.json();
+      counterElement.textContent = `Visitors: ${data.value}`;
+      localStorage.setItem("visitorCounted", "true");
+    } else {
+      const res = await fetch(`https://api.countapi.xyz/get/${counterKey}/visits`);
+      const data = await res.json();
+      counterElement.textContent = `Visitors: ${data.value}`;
+    }
+  } catch {
+    counterElement.textContent = "";
+  }
+}
+updateCounter();
 </script>
 <a href="https://info.flagcounter.com/73KK"><img src="https://s05.flagcounter.com/count2/73KK/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
 </body>
