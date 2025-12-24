@@ -1,254 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dr. Ali Moltajaei Farid — AI, Robotics & Autonomous Systems</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: #222;
-      background-color: #fafafa;
-      line-height: 1.6;
-    }
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dr. Ali Moltajaei Farid — AI, Robotics & Autonomous Systems</title>
 
-    header, footer {
-      background-color: #003366;
-      color: #fff;
-      padding: 1.5rem 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0.3rem 0;
-      font-size: 2rem;
-    }
-
-    header p {
-      margin: 0.2rem 0 0.8rem 0;
-    }
-
-    header a.btn-primary {
-      display: inline-block;
-      margin-top: 0.8rem;
-      background-color: #94d2bd;
-      color: #003049;
-      padding: 0.8em 1.5em;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    header a.btn-primary:hover {
-      background-color: #e9d8a6;
-    }
-
-    nav {
-      background: #f1f1f1;
-      border-bottom: 2px solid #003366;
-      text-align: center;
-      padding: 0.6rem 0;
-    }
-
-    nav a {
-      color: #003366;
-      text-decoration: none;
-      font-weight: 600;
-      margin: 0 1rem;
-      transition: color 0.2s ease;
-    }
-
-    nav a:hover {
-      color: #0055aa;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      padding: 2rem;
-    }
-
-    section h2 {
-      color: #003366;
-      border-left: 5px solid #003366;
-      padding-left: 10px;
-      margin-bottom: 1rem;
-    }
-
-    .bio-img {
-      display: block;
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 0 auto 1rem auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      padding: 0;
-      list-style: none;
-    }
-
-    .skills-grid li {
-      background: #f6f8fc;
-      border-radius: 8px;
-      padding: 0.7rem 1rem;
-      box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
-    }
-
-    .project-list, .pub-list {
-      list-style: none;
-      padding: 0;
-    }
-
-    .project-item, .pub-list li {
-      margin-bottom: 1.2rem;
-      padding-bottom: 0.6rem;
-      border-bottom: 1px solid #eee;
-    }
-
-    .project-item h3 {
-      margin-bottom: 0.3rem;
-      color: #003366;
-    }
-
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: #fff;
-      text-decoration: underline;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.6rem;
-      }
-      section {
-        padding: 1.5rem;
-      }
-    }
-  </style>
+<style>
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#fafafa;color:#222;line-height:1.6;}
+header,footer{background:#003366;color:#fff;padding:1.6rem;text-align:center;}
+nav{background:#f1f1f1;padding:.7rem;text-align:center;}
+nav a{margin:0 1rem;color:#003366;text-decoration:none;font-weight:600;}
+.container{max-width:1000px;margin:2rem auto;padding:1rem;}
+section{background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.1);padding:2rem;margin-bottom:2rem;}
+h2{color:#003366;border-left:5px solid #003366;padding-left:10px;}
+.profile-toggle{text-align:center;margin:1rem;}
+.profile-toggle button{border:none;background:#003366;color:white;padding:10px 18px;border-radius:20px;margin:0 10px;font-weight:600;cursor:pointer;}
+.profile-toggle button:hover{background:#0055aa;}
+.bio-img{width:160px;height:160px;border-radius:50%;display:block;margin:0 auto 1rem;}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;list-style:none;padding:0;}
+.skills-grid li{background:#f6f8fc;border-radius:8px;padding:.7rem;}
+.project-list{list-style:none;padding:0;}
+.project-list li{border-bottom:1px solid #eee;margin-bottom:.8rem;padding-bottom:.6rem;}
+.btn-primary{background:#94d2bd;color:#003049;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:700;margin:0 .4rem;display:inline-block;}
+</style>
 </head>
 
 <body>
-  <header>
-    <h1>Dr. Ali Moltajaei Farid</h1>
-    <p>Researcher & Engineer in AI, Robotics, and Autonomous Systems</p>
-    <p>PhD in Computer Science — <strong>Monash University, Australia</strong><br>
-       Former Researcher — <strong>University of Regina, Canada</strong></p>
-    <a href="Ali_Farid_CV.pdf" class="btn-primary" download>Download CV</a>
-  </header>
 
-  <nav>
-    <a href="#about">About</a> |
-    <a href="#research">Research & Projects</a> |
-    <a href="projects.html">Previous Projects</a> |
-    <a href="#skills">Skills</a> |
-    <a href="#publications">Publications</a> |
-    <a href="#contact">Contact</a>
-  </nav>
+<header>
+<h1>Dr. Ali Moltajaei Farid</h1>
+<p>AI, Robotics & Embedded Systems Engineer</p>
+<p>PhD — Monash University | Former Researcher — University of Regina</p>
+<a href="Ali_Farid_Academic_CV.pdf" class="btn-primary">Academic CV</a>
+<a href="Ali_Farid_Industry_CV.pdf" class="btn-primary">Industry CV</a>
+</header>
 
-  <main class="container">
+<div class="profile-toggle">
+<button onclick="showAcademic()">Academic Profile</button>
+<button onclick="showIndustry()">Industry Profile</button>
+</div>
 
-    <section id="about">
-      <img src="images/profile.jfif" alt="Ali Moltajaei Farid" class="bio-img">
-      <h2>About Me</h2>
-      <p>I am a researcher and engineer specializing in AI, robotics, and autonomous systems. I hold a PhD in Computer Science from <strong>Monash University, Australia</strong>, and have conducted research at the <strong>University of Regina, Canada</strong>. My work spans UAV control, multi-agent reinforcement learning, and intelligent system design.</p>
-      <p>I have led interdisciplinary projects, published in top-tier journals and conferences, and supervised graduate students. I am currently open to roles in both academia and industry, focusing on real-world intelligent systems.</p>
-    </section>
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#publications">Publications</a>
+<a href="#contact">Contact</a>
+</nav>
 
-    <section id="research">
-      <h2>Research & Projects</h2>
-      <ul class="project-list">
-        <li class="project-item">
-          <h3>Multi-Agent RL for Precision Agriculture Robots</h3>
-          <p>Design and implementation of cooperative agents for crop monitoring and management using UAV swarms and reinforcement learning.</p>
-        </li>
-        <li class="project-item">
-          <h3>Optimized UAV Patrolling Strategies</h3>
-          <p>Adaptive control and path planning algorithms for autonomous aerial surveillance missions with real-time optimization.</p>
-        </li>
-        <li class="project-item">
-          <h3>Neuro-Fuzzy Control of Nonlinear Systems</h3>
-          <p>Hybrid control architectures integrating neural and fuzzy models for uncertain nonlinear system environments.</p>
-        </li>
-      </ul>
-    </section>
+<main class="container">
 
-    <section id="skills">
-      <h2>Skills & Tools</h2>
-      <ul class="skills-grid">
-        <li>C++, Python, MATLAB</li>
-        <li>ROS, PyTorch, TensorFlow</li>
-        <li>PCB Design (Altium), IoT Systems</li>
-        <li>Microcontrollers: AVR, ARM, PIC, STM32</li>
-        <li>Multi-Agent RL, Control Systems, Path Planning</li>
-        <li>Project Leadership, Mentoring, Scientific Writing</li>
-      </ul>
-    </section>
+<div id="academic-profile">
 
-    <section id="publications">
-      <h2>Selected Publications & Contributions</h2>
-      <ul class="pub-list">
-        <li><strong>Multi-UAV Weed Spraying</strong>, ROBOVIS 2024: 210–224 — coordinated spraying strategies using UAV swarms.</li>
-        <li><strong>On-policy Actor-Critic Reinforcement Learning for Multi-UAV Exploration</strong>, CoRR 2024 — development of actor-critic RL method tailored for efficient multi-UAV mapping.</li>
-        <li><strong>Search Strategies and Specifications in a Swarm versus Swarm Context</strong>, <em>Robotica</em>, 39(11):1909–1925 (2021) — comparative analysis of swarm behaviours and search tactics under varying constraints.</li>
-      </ul>
-    </section>
+<section id="about">
+<img src="images/profile.jfif" class="bio-img">
+<h2>Academic Profile</h2>
+<p>Researcher in swarm robotics, UAV autonomy, and reinforcement learning with international research experience in Canada and Australia.</p>
+</section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:afarid@uregina.ca">afarid@uregina.ca</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/ali-farid/">linkedin.com/in/ali-farid</a></p>
-      <p><em>Let’s talk about how I can contribute to your team or collaborate on research.</em></p>
-    </section>
-  </main>
+<section id="projects">
+<h2>Research Projects</h2>
+<ul class="project-list">
+<li>Multi-UAV RL Precision Agriculture Systems</li>
+<li>Adaptive UAV Swarm Patrolling Algorithms</li>
+<li>Neuro-Fuzzy Intelligent Controllers</li>
+</ul>
+</section>
 
-  <footer>
-    <p>© 2025 Dr. Ali Moltajaei Farid — All rights reserved</p>
-    <p><span id="visitor-counter">Loading...</span></p>
-  </footer>
+<section id="skills">
+<h2>Research Skills</h2>
+<ul class="skills-grid">
+<li>Reinforcement Learning</li>
+<li>Swarm Robotics</li>
+<li>Python, MATLAB, ROS</li>
+<li>Multi-Agent Systems</li>
+</ul>
+</section>
 
-  <script>
-    const counterElement = document.getElementById('visitor-counter');
-    const counterKey = "alifaridm.github.io/Web"; 
-    async function updateCounter() {
-      try {
-        if (!localStorage.getItem("visitorCounted")) {
-          const res = await fetch(`https://api.countapi.xyz/update/${counterKey}/visits/?amount=1`);
-          const data = await res.json();
-          counterElement.textContent = `Visitors: ${data.value}`;
-          localStorage.setItem("visitorCounted", "true");
-        } else {
-          const res = await fetch(`https://api.countapi.xyz/get/${counterKey}/visits`);
-          const data = await res.json();
-          counterElement.textContent = `Visitors: ${data.value}`;
-        }
-      } catch {
-        counterElement.textContent = "";
-      }
-    }
-    updateCounter();
-  </script>
+<section id="publications">
+<h2>Selected Publications</h2>
+<ul class="project-list">
+<li>Robotica (2023) – UAV Patrolling</li>
+<li>EAAI (2025) – Multi-Robot Spraying</li>
+<li>Journal of Aerospace Science & Tech (2025)</li>
+</ul>
+</section>
 
-  <a href="https://info.flagcounter.com/73KK"><img src="https://s05.flagcounter.com/count2/73KK/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+</div>
+
+<div id="industry-profile" style="display:none">
+
+<section>
+<h2>Senior Robotics & AI Engineer</h2>
+<p>10+ years designing deployable autonomous UAV, robotics and embedded AI systems.</p>
+<ul class="project-list">
+<li>Multi-UAV weed spraying (Precision.ai, Canada)</li>
+<li>Medical RF micro-needling device electronics</li>
+<li>ARM based industrial monitoring systems</li>
+<li>RL-based quadrotor controllers</li>
+</ul>
+</section>
+
+<section>
+<h2>Engineering Skills</h2>
+<ul class="skills-grid">
+<li>Embedded C/C++, ARM, STM32</li>
+<li>PCB Design (Altium)</li>
+<li>ROS, Linux, PyTorch</li>
+<li>Pixhawk, Ardupilot UAVs</li>
+</ul>
+</section>
+
+<section>
+<h2>Industry Focus</h2>
+<p>Aerospace, robotics, medical devices, autonomous systems, smart manufacturing.</p>
+</section>
+
+</div>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:afarid@uregina.ca">afarid@uregina.ca</a></p>
+<p>LinkedIn: linkedin.com/in/ali-farid</p>
+</section>
+
+</main>
+
+<footer>
+© 2025 Dr Ali Moltajaei Farid
+</footer>
+
+<script>
+function showAcademic(){academic-profile.style.display="block";industry-profile.style.display="none";}
+function showIndustry(){academic-profile.style.display="none";industry-profile.style.display="block";}
+</script>
+
 </body>
 </html>
+
