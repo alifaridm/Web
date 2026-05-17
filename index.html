@@ -3,22 +3,112 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Dr. Ali Moltajaei Farid — AI, Robotics & Autonomous Systems</title>
+<title>Dr. Ali Moltajaei Farid — Swarm Robotics & Autonomous Systems</title>
 
 <style>
-body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#fafafa;color:#222;line-height:1.6;}
-header,footer{background:#003366;color:#fff;padding:1.6rem;text-align:center;}
-nav{background:#f1f1f1;padding:.7rem;text-align:center;}
-nav a{margin:0 1rem;color:#003366;text-decoration:none;font-weight:600;}
-.container{max-width:1000px;margin:2rem auto;padding:1rem;}
-section{background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.1);padding:2rem;margin-bottom:2rem;}
-h2{color:#003366;border-left:5px solid #003366;padding-left:10px;}
-.bio-img{width:160px;height:160px;border-radius:50%;display:block;margin:0 auto 1rem;}
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;list-style:none;padding:0;}
-.skills-grid li{background:#f6f8fc;border-radius:8px;padding:.7rem;}
-.project-list{list-style:none;padding:0;}
-.project-list li{border-bottom:1px solid #eee;margin-bottom:.8rem;padding-bottom:.6rem;}
-.btn-primary{background:#94d2bd;color:#003049;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:700;margin:0 .4rem;display:inline-block;}
+body{
+  margin:0;
+  font-family:Segoe UI,Arial,sans-serif;
+  background:#f7f9fc;
+  color:#222;
+  line-height:1.7;
+}
+
+header,footer{
+  background:#002b45;
+  color:#fff;
+  padding:2rem;
+  text-align:center;
+}
+
+header h1{
+  margin-bottom:.4rem;
+}
+
+nav{
+  background:#eef2f7;
+  padding:.9rem;
+  text-align:center;
+  position:sticky;
+  top:0;
+}
+
+nav a{
+  margin:0 1rem;
+  color:#003366;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.container{
+  max-width:1050px;
+  margin:2rem auto;
+  padding:1rem;
+}
+
+section{
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 4px 14px rgba(0,0,0,.08);
+  padding:2rem;
+  margin-bottom:2rem;
+}
+
+h2{
+  color:#003366;
+  border-left:5px solid #003366;
+  padding-left:10px;
+}
+
+.bio-img{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  display:block;
+  margin:0 auto 1rem;
+  object-fit:cover;
+}
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;
+  list-style:none;
+  padding:0;
+}
+
+.skills-grid li{
+  background:#f4f7fb;
+  border-radius:10px;
+  padding:.9rem;
+}
+
+.project-list{
+  list-style:none;
+  padding:0;
+}
+
+.project-list li{
+  border-bottom:1px solid #e5e5e5;
+  margin-bottom:1rem;
+  padding-bottom:1rem;
+}
+
+.btn-primary{
+  background:#94d2bd;
+  color:#003049;
+  padding:12px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+  display:inline-block;
+  margin-top:1rem;
+}
+
+.highlight{
+  color:#005f73;
+  font-weight:600;
+}
 </style>
 </head>
 
@@ -26,18 +116,27 @@ h2{color:#003366;border-left:5px solid #003366;padding-left:10px;}
 
 <header>
 <h1>Dr. Ali Moltajaei Farid</h1>
-<p>AI, Robotics & Embedded Systems Engineer | Senior Researcher</p>
-<p>PhD — Monash University | Former Researcher — University of Regina</p>
-<a href="Ali_Farid_CV.pdf" class="btn-primary">Academic CV</a>
-<a href="ind cv (3).pdf" class="btn-primary">Industry CV</a>
+
+<p>
+Senior Researcher in Swarm Robotics, Autonomous Systems, 
+Reinforcement Learning & Intelligent Control
+</p>
+
+<p>
+PhD in Computer Science — Monash University
+</p>
+
+<a href="Ali_Farid_CV.pdf" class="btn-primary">
+Download Academic CV
+</a>
 </header>
-  
+
 <nav>
 <a href="#about">About</a>
-<a href="#projects">Recent Projects</a>
-<a href="projects.html">Previous Projects</a>
-<a href="#skills">Skills</a>
+<a href="#research">Research</a>
 <a href="#publications">Publications</a>
+<a href="#skills">Skills</a>
+<a href="#teaching">Teaching</a>
 <a href="#contact">Contact</a>
 </nav>
 
@@ -45,64 +144,174 @@ h2{color:#003366;border-left:5px solid #003366;padding-left:10px;}
 
 <section id="about">
 <img src="images/profile.jfif" class="bio-img">
+
 <h2>About Me</h2>
+
 <p>
-Robotics and AI engineer with 10+ years of experience across academia and industry.
-Specialized in autonomous UAV systems, swarm robotics, reinforcement learning,
-embedded electronics and PCB design. Experienced in deploying autonomous systems
-for agriculture, medical devices, and industrial automation.
+I am a senior robotics researcher with more than 10 years of academic and 
+industrial experience in autonomous UAV systems, swarm robotics, 
+multi-agent systems, and reinforcement learning.
+</p>
+
+<p>
+My research focuses on developing scalable and adaptive intelligence for 
+heterogeneous robotic systems operating in dynamic real-world environments. 
+I have worked on UAV exploration, coordinated multi-robot spraying, 
+multi-agent reinforcement learning, intelligent control systems, 
+and autonomous robotic decision making.
+</p>
+
+<p>
+My long-term research vision is to bridge reinforcement learning and 
+real-world robotic deployment for applications in precision agriculture, 
+infrastructure monitoring, search and rescue, and cooperative autonomous systems.
 </p>
 </section>
 
-<section id="projects">
-<h2>Key Projects & Experience</h2>
-<ul class="project-list">
-<li><b>Multi-UAV Precision Agriculture Systems (Canada)</b> — Field-tested RL-based spraying and mapping platforms.</li>
-<li><b>Developing Medical Devices </b> — Electronics, firmware, PCB layout, compliance documentation.</li>
-<li><b>RL-based Quadcopter Flight Controller</b> — Autonomous navigation and stabilization.</li>
-</ul>
-</section>
+<section id="research">
+<h2>Current Research Directions</h2>
 
-<section id="skills">
-<h2>Skills & Tools</h2>
-<ul class="skills-grid">
-<li>Python, C++, MATLAB, ROS</li>
-<li>PyTorch, Reinforcement Learning</li>
-<li>ARM, STM32, PIC, Raspberry Pi</li>
-<li>PCB Design (Altium, Protel)</li>
-<li>Pixhawk, Ardupilot UAVs</li>
-<li>Linux, Embedded Systems</li>
+<ul class="project-list">
+<li>
+<b>Multi-UAV Cooperative Systems</b><br>
+Reinforcement learning approaches for coordinated exploration, mapping, 
+spraying, and payload transportation using heterogeneous UAV swarms.
+</li>
+
+<li>
+<b>Swarm Robotics & Multi-Agent Intelligence</b><br>
+Adaptive search strategies, decentralized coordination, and 
+collective intelligence for autonomous robotic systems.
+</li>
+
+<li>
+<b>Intelligent Control Systems</b><br>
+Development of reinforcement learning and neuro-fuzzy controllers 
+for UAV guidance, navigation, and stabilization.
+</li>
+
+<li>
+<b>Autonomous Robotics for Real-World Applications</b><br>
+Research on precision agriculture, infrastructure inspection, 
+medical robotics concepts, and smart autonomous environments.
+</li>
 </ul>
 </section>
 
 <section id="publications">
 <h2>Selected Publications</h2>
+
 <ul class="project-list">
-<li><em>Engineering Applications of Artificial Intelligence</em>, 2025 — Multi-robot spraying</li>
-<li><em>Robotica</em>, 2023 — UAV swarm patrolling</li>
-<li><em>Expert Systems with Applications</em>, 2026 — multi-robot mapping</li>
+
+<li>
+<b>Expert Systems with Applications (2026)</b><br>
+On-policy Actor-Critic Reinforcement Learning for Multiple UAV Exploration
+</li>
+
+<li>
+<b>Engineering Applications of Artificial Intelligence (2025)</b><br>
+Multiple Aerial/Ground Vehicles Coordinated Spraying Using Reinforcement Learning
+</li>
+
+<li>
+<b>Journal of Aerospace Science and Technology (2025)</b><br>
+Deep Reinforcement Learning-Based Optimization of Fuzzy Inference Systems for Quadrotor UAV Control
+</li>
+
+<li>
+<b>Robotica (2023)</b><br>
+Effective UAV Patrolling for Swarm of Intruders with Heterogeneous Behavior
+</li>
+
+<li>
+<b>Robotica (2021)</b><br>
+Search Strategies and Specifications in a Swarm versus Swarm Context
+</li>
+
 </ul>
+</section>
+
+<section id="skills">
+<h2>Technical Skills</h2>
+
+<ul class="skills-grid">
+<li>Python, C++, MATLAB, ROS</li>
+<li>Reinforcement Learning & PyTorch</li>
+<li>Swarm Robotics & Multi-Agent Systems</li>
+<li>Embedded Systems & Electronics</li>
+<li>ARM, STM32, PIC, Raspberry Pi</li>
+<li>PCB Design (Altium, PROTEL)</li>
+<li>Pixhawk & Ardupilot UAV Systems</li>
+<li>Linux, Webots, LaTeX</li>
+</ul>
+
+</section>
+
+<section id="teaching">
+<h2>Teaching & Supervision</h2>
+
+<p>
+Experienced instructor and research mentor with supervision experience 
+across MSc and PhD projects in reinforcement learning, UAV control, 
+robot motion planning, and swarm robotics.
+</p>
+
+<p>
+Courses taught include:
+<span class="highlight">
+Artificial Intelligence Fundamentals,
+Algorithms and Programming,
+Advanced Algorithms and Data Structures
+</span>.
+</p>
+
 </section>
 
 <section id="contact">
 <h2>Contact</h2>
-<p>Email: <a href="mailto:afarid@uregina.ca">afarid@uregina.ca</a></p>
-<p>LinkedIn: linkedin.com/in/ali-farid</p>
+
+<p>
+Email:
+<a href="mailto:afarid@uregina.ca">
+afarid@uregina.ca
+</a>
+</p>
+
+<p>
+Google Scholar:
+<a href="https://scholar.google.ca/citations?user=S6pRoJsAAAAJ&hl=en">
+Scholar Profile
+</a>
+</p>
+
+<p>
+ORCID:
+<a href="https://orcid.org/0000-0003-2317-1577">
+0000-0003-2317-1577
+</a>
+</p>
+
 </section>
 
 </main>
 
 <footer>
-<p>© 2025 Dr Ali Moltajaei Farid — AI, Robotics & Embedded Systems</p>
+<p>
+© 2026 Dr Ali Moltajaei Farid — Swarm Robotics & Autonomous Systems
+</p>
+
 <p><span id="visitor-counter">Loading...</span></p>
+
 <a href="https://info.flagcounter.com/73KK">
 <img src="https://s05.flagcounter.com/count2/73KK/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter">
 </a>
+
 </footer>
 
 <script>
 const counterElement = document.getElementById('visitor-counter');
-const counterKey = "alifaridm.github.io/Web"; 
+const counterKey = "alifaridm.github.io/Web";
+
 async function updateCounter() {
   try {
     if (!localStorage.getItem("visitorCounted")) {
@@ -119,7 +328,9 @@ async function updateCounter() {
     counterElement.textContent = "";
   }
 }
+
 updateCounter();
+</script>
+
 </body>
 </html>
-
